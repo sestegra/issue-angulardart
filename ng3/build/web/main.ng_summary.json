@@ -1,0 +1,165 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/platform/browser_static.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "7": [
+          {
+            "2": "Navbar"
+          }
+        ]
+      },
+      {
+        "1": "Navbar",
+        "7": [
+          {
+            "2": "NavbarTab"
+          }
+        ]
+      },
+      {
+        "1": "NavbarTab"
+      }
+    ],
+    "6": "main.dart"
+  },
+  "type": {
+    "AppComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "AppComponent",
+        "moduleUrl": "asset:ng3/web/main.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "      <h1>AngularDart 3.0.0</h1>\n      <navbar></navbar>\n      ",
+        "templateUrl": "asset:ng3/web/main.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "Navbar": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "navbar",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "Navbar",
+        "moduleUrl": "asset:ng3/web/main.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "contents": "contents"
+      },
+      "inputTypes": {
+        "contents": " List"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "        <div *ngFor=\"let content of contents\">\n          <navbar-tab [text]=\"content\"></navbar-tab>\n        </div>\n        ",
+        "templateUrl": "asset:ng3/web/main.dart",
+        "styles": [
+          ":host .tab-label-content a { color: red; }"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "NavbarTab": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "navbar-tab",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "NavbarTab",
+        "moduleUrl": "asset:ng3/web/main.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "text": "text"
+      },
+      "inputTypes": {
+        "text": " String"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {
+        "style": "display: block;",
+        "class": "tab-label-content"
+      },
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<a><span>{{text}}</span></a>",
+        "templateUrl": "asset:ng3/web/main.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "main": {
+      "class": "Identifier",
+      "name": "main",
+      "moduleUrl": "asset:ng3/web/main.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
